@@ -11,6 +11,6 @@ select * from film where rental_rate=0.99 and (replacement_cost= 12.99 or replac
 select last_name from customer where first_name ='Mary' ; 
 
 5)film tablosundaki uzunluğu(length) 50 ten büyük OLMAYIP aynı zamanda rental_rate değeri 2.99 veya 4.99 OLMAYAN verileri sıralayınız.
-select * from film where not (length > 50 and  rental_rate = 2.99 or rental_rate = 4.99) ;
+select* from film WHERE length <= 50  AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);
 
 
